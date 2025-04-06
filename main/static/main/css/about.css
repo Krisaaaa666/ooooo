@@ -1,0 +1,15 @@
+    
+.scool{
+    color: rgb(120,96,72);
+    margin-left: -100px; 
+    margin-top: 250px; 
+    position: absolute;
+    width: 1450px; /* задайте нужную ширину */
+    padding: 3px; /* отступы внутри блока */
+    word-wrap: break-word; /* позволяет переносить слова */
+    flex-wrap: wrap;
+    flex: 1;
+
+    margin-bottom: 10px;
+}    
+    

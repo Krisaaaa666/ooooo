@@ -1,0 +1,60 @@
+{% extends "main/layout.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="container_reg">
+        <form method="post" action="{% url 'vxod' %}" id="authForm">
+            {% csrf_token %}
+            <h2 style="text-align: center;">Вход в систему</h2>
+
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <button type="submit">Войти</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script>
+    document.getElementById('authForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const message = document.getElementById('message');
+        message.textContent = '';
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value,
+                },
+                body: new FormData(form)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                window.location.href = result.redirect_url || '/';  // Перенаправление
+            } else {
+                message.textContent = result.error || 'Ошибка входа';
+                message.style.color = 'red';
+            }
+        } catch (error) {
+            message.textContent = 'Ошибка соединения';
+            message.style.color = 'red';
+        }
+    });
+    </script>
+{% endblock %}

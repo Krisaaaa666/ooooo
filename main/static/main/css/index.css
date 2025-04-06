@@ -1,0 +1,168 @@
+
+.container{
+    position: relative;
+    width: 100%;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container0{
+    position: relative;
+    width: 100%;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    text-align: -30px;
+    flex-wrap: wrap;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+}
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        flex: 1 0 auto;
+        margin: 0 auto;
+        text-align: left;
+    
+        
+        flex-wrap: wrap;
+        flex: 1;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container0 {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        flex: 1 0 auto;
+        margin-left: -300px;
+        text-align: -30px;
+    
+        flex-wrap: wrap;
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+.features{
+    padding-top: 250px;
+    position: absolute;
+    max-width: 90%;
+}
+
+.verticalLine {
+    width: 500px;
+    height: 2180px;  /* Высота до полного размера */
+    background-color: rgb(244, 244, 243);
+    float: right;
+    margin-top: -2580px;
+    padding-bottom: 100%;
+    text-align:center;
+    margin-right: -600px;
+    margin-left: 600px;
+    position: static;
+    word-wrap: break-word;
+}
+.sobuitiua{
+    padding-top: 20px;
+    position: absolute;
+    margin-left: 950px;
+    text-align:left;
+    color: rgb(120,96,72);
+    flex-wrap: wrap;
+    flex: 1;
+    
+    
+}
+
+.img_privetstvie{
+    padding-top: 60px;
+    position: absolute;
+    margin-left: -295px;
+    text-align:center;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-basis: 100%;
+}
+
+.Line{
+    float: left;
+    width: 100%;
+    border-top: 3px solid rgb(120,96,72);
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 780px;
+    text-align:center;
+    margin-right: -10%;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-basis: 100%;
+}
+
+.img_ychitel{
+    margin-top: 800px; 
+    margin-left: -530px; 
+    position: absolute;
+}
+.ychitel{
+    color: rgb(120,96,72);
+    margin-left: -170px; 
+    margin-top: 950px; 
+    position: absolute;
+
+    width: 270px; /* задайте нужную ширину */
+    padding: 3px; /* отступы внутри блока */
+    word-wrap: break-word; /* позволяет переносить слова */
+    
+}
+
+.img_9_maua{
+    margin-top: 800px; 
+    margin-left: -240px; 
+    position: absolute;
+}
+._9_maua{
+    color: rgb(120,96,72);
+    margin-left: 120px; 
+    margin-top: 950px; 
+    position: absolute;
+    width: 250px; /* задайте нужную ширину */
+    padding: 3px; /* отступы внутри блока */
+    word-wrap: break-word; /* позволяет переносить слова */
+}
+
+.img_myzika{
+    margin-top: 800px; 
+    margin-left: 50px; 
+    position: absolute;
+}
+.myzika{
+    color: rgb(120,96,72);
+    margin-left: 430px; 
+    margin-top: 950px; 
+    position: absolute;
+    width: 270px; /* задайте нужную ширину */
+    padding: 3px; /* отступы внутри блока */
+    word-wrap: break-word; /* позволяет переносить слова */
+}
+
+
+
+
