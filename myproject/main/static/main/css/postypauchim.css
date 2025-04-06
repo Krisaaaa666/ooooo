@@ -1,0 +1,62 @@
+/* Общие стили для body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(120, 96, 72);
+    background-color: #fff;
+}
+
+/* Основной контейнер */
+.container {
+    width: 800px;
+    margin: 250px auto 0;
+    padding: 20px;
+    position: relative;
+}
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    max-width: 650px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Контейнеры таблиц */
+.table-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto;
+    word-wrap: break-word;
+}
+.spacer {
+  margin-top: 400px;
+}
+/* Стиль для блока с контактами */
+.contacts {
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Убираем лишние свойства */
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+/* Убираем дублирующиеся стили */
+/* Все повторяющиеся объявления удалены */

@@ -1,0 +1,77 @@
+{% extends "main/layout.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% if messages %}
+        	{% for message in messages %}
+          	<div class="alert alert-{{ message.tags }}">
+            	{{ message }}
+          	</div>
+        	{% endfor %}
+{% endif %}
+
+{% block content %}
+    <body>
+        <div class="container"> 
+            <div class="container0">  
+            <img class = "img_privetstvie" src=" static/main/img/privetstvie.jpg" alt="" style=" width: 800px; height: 600px;">
+            </div>
+            <div class="sobuitiua">
+                <h1>Ближайшие события: </h1>
+                <h3 style="margin-top: 30px">День открытых дверей</h3>
+                <li>дата</li>
+                <li>время</li>
+                <li>место</li>
+                <h3 style="margin-top: 15px">Субботник</h3>
+                <li>дата</li>
+                <li>время</li>
+                <li>место</li>
+                <h3 style="margin-top: 15px">Концерт</h3>
+                <li>дата</li>
+                <li>время</li>
+                <li>место</li>
+            </div>
+            <div class="verticalLine"></div>
+
+            <h3 style=" color: rgb(120,96,72); margin-left: -150px; margin-top: 740px; position: absolute;">Новости</h3>
+            <div class="Line"></div>
+
+            <div class="cont1"> 
+                <img class = "img_ychitel"src=" static/main/img/ychitel.jpg" alt="" style=" width: 220px; height: 140px;">
+                <div class = "ychitel">
+                    <h4>Вокальное выступление ко дню учителя </h4>
+                </div>
+            </div>
+
+            <div class="cont2"> 
+                <img class = "img_9_maua"src=" static/main/img/9_maua.jpg" alt="" style=" width: 220px; height: 140px;">
+                <div class = "_9_maua">
+                    <h4>Поздравление к 9 мая</h4>
+            </div>
+
+            <div class="cont3"> 
+                <img class = "img_myzika"src=" static/main/img/myzika.jpg" alt="" style=" width: 220px; height: 140px;">
+                <div class = "myzika">
+                    <h4>Концерт ко дню музыки</h4>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+  
+
+    {% comment %}
+        {% if students %}
+            {% for el in students %}         {#вывод таблиц из бд#}
+                <div class='alert alert-warning mt-2'>
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.Initials }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h2> У нас нет записей</h2>
+        {% endif %}
+    {% endcomment %}
+
+{% endblock %}

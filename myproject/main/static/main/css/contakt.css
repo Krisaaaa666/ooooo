@@ -1,0 +1,32 @@
+iframe{
+    border: 2px solid ;
+    float: right;
+    margin-right: 600px;
+    margin-top: -2080px;
+    background-color: aliceblue;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    text-align:center;
+}
+
+.adres{
+    float: right;
+    margin-right: 1700px;
+    margin-top: -2050px;
+    text-align:left;
+    color: rgb(96,72,48);
+}
+.adres2{
+    float: right;
+    margin-right: 1200px;
+    margin-top: -2250px;
+    text-align:left;
+    color: rgb(96,72,48);
+}
+.adres3{
+    float: right;
+    margin-right: 1250px;
+    margin-top: -1400px;
+    text-align:left;
+    color: rgb(96,72,48);
+}
